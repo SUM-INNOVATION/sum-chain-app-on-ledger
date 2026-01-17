@@ -1,0 +1,177 @@
+# =============================================================================
+# SUM Chain Ledger App - .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Build artifacts
+# -----------------------------------------------------------------------------
+*.o
+*.d
+*.elf
+*.map
+*.hex
+*.bin
+*.lst
+bin/
+obj/
+build/
+debug/
+release/
+
+# Ledger specific build outputs
+app.elf
+app.hex
+app.sha256
+*.apdu
+
+# Dependency files
+dep/
+
+# -----------------------------------------------------------------------------
+# Test artifacts
+# -----------------------------------------------------------------------------
+tests/run_tests
+tests/*.o
+*.gcov
+*.gcda
+*.gcno
+coverage/
+.coverage
+
+# -----------------------------------------------------------------------------
+# IDE and editor files
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.clangd/
+compile_commands.json
+
+# -----------------------------------------------------------------------------
+# OS generated files
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# -----------------------------------------------------------------------------
+# Sensitive and private files - NEVER COMMIT THESE
+# -----------------------------------------------------------------------------
+# Private keys (any format)
+*.pem
+*.key
+*.p12
+*.pfx
+*.der
+id_rsa
+id_ed25519
+*.private
+
+# Seed phrases and mnemonics
+seed.txt
+mnemonic.txt
+recovery.txt
+backup.txt
+words.txt
+phrase.txt
+
+# Wallet files
+*.wallet
+wallet.dat
+keystore/
+keystores/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.env
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.yaml
+config.local.*
+
+# Test seeds (if any are generated)
+test_seed.txt
+test_mnemonic.txt
+
+# Ledger device state dumps
+*.state
+device_state/
+
+# -----------------------------------------------------------------------------
+# Speculos emulator files
+# -----------------------------------------------------------------------------
+speculos/
+*.automation.json
+btc.json
+automation/
+
+# -----------------------------------------------------------------------------
+# Documentation build
+# -----------------------------------------------------------------------------
+docs/_build/
+site/
+
+# -----------------------------------------------------------------------------
+# Python (for test scripts)
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.Python
+pip-log.txt
+
+# -----------------------------------------------------------------------------
+# Node.js (for companion tools)
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# -----------------------------------------------------------------------------
+# Temporary files
+# -----------------------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# -----------------------------------------------------------------------------
+# Archives (may contain sensitive exports)
+# -----------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# -----------------------------------------------------------------------------
+# Core dumps
+# -----------------------------------------------------------------------------
+core
+core.*
+vgcore.*
